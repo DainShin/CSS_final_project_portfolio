@@ -1,0 +1,704 @@
+/* This is web font for the logo-like name in the menu */
+@font-face {
+    font-family: logoFont;
+    src: url(./assets/ShaquettaTorelly-0WZPd.otf);
+}
+
+/* Generalisation & Universal Selector */
+/* I used google font('Geologica') for the whole text */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    color: #333;
+}
+
+html {
+    font-size: 10px;
+    color: #333;
+}
+
+body {
+    font-size:  clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+
+/* Type Selectors */
+h3 {
+    font-size: clamp(3em, 0.75rem + 1.5vw, 5rem);
+}
+
+h4 {
+    font-size: clamp(2.8rem, 0.75rem + 1.5vw, 4rem);
+}
+
+a,
+span {
+    font-size:  clamp(2rem, 0.75rem + 1.5vw, 2.8em);
+}
+
+p {
+    font-size:  clamp(2.3rem, 0.75rem + 1.5vw, 2.8rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Set the margin to make the page put in the center of the page
+   Set background colour
+*/
+.wrap {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.inner {
+    padding-bottom: 30em;
+}
+
+.inner h3 {
+    margin: 3.5em 0 1em 0;
+}
+
+
+/* menu bar */
+
+/* Class Selectors */
+.menu-bar {
+    padding-top: 5em;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p a {
+    font-family: 'logoFont', sans-serif;
+    font-size:  clamp(3.8rem, 0.75rem + 1.5vw, 5em);
+
+}
+
+.menu-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+
+}
+
+.menu-bar ul li {
+    margin: 1em ;
+}
+
+
+/* wrap */
+
+/* Class Selector */
+
+.wrap {
+    width: 90%;
+}
+
+
+/* section 1 -> intro text */
+
+.intro-text {
+    padding: 15em 0 10em 0;
+    text-align: center;
+}
+
+.intro-text span {
+    display: inline-block;
+    margin: 0 -.05em;
+    animation: loading 2.2s infinite alternate;
+    font-size: 4rem;
+    font-weight: 1000;
+    color: #bbbbbb;
+}
+
+.intro-text span:nth-child(2) {
+    animation-delay: .3s;
+}
+
+.intro-text span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.intro-text span:nth-child(4) {
+    animation-delay: .5s;
+}
+
+.intro-text span:nth-child(5) {
+    animation-delay: .6s;
+}
+
+.intro-text span:nth-child(6) {
+    animation-delay: .7s;
+
+}
+
+.intro-text span:nth-child(7) {
+    animation-delay: .8s;
+}
+
+.intro-text span:nth-child(8) {
+    animation-delay: .9s;
+    color: #2D9CDB;
+}
+
+.intro-text span:nth-child(9) {
+    animation-delay: .10s;
+}
+
+.intro-text span:nth-child(10) {
+    animation-delay: .11s;
+}
+
+.intro-text span:nth-child(11) {
+    animation-delay: .12s;
+}
+
+.intro-text span:nth-child(12) {
+    animation-delay: .13s;
+}
+.intro-text span:nth-child(13) {
+    animation-delay: .14s;
+}
+
+
+@keyframes loading {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* section 2 */
+/* profile */
+
+.profile {
+    margin-top: 10em;
+}
+
+.type-container {
+    position: relative;
+    padding-left: 2em;
+}
+
+.type {
+    color: transparent;
+    font-size: calc(3vw + 3vh);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.type::after {
+    display: inline-block;
+    content: "I develop values!";
+    position: absolute;
+    color: #333;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    animation: typing 9s steps(40)  infinite;
+    text-align: center;
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    40% {
+        width: 8.2em;
+    }
+    60% {
+        width: 8.2em;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+
+/* timeline */
+.timeline {
+    padding-top: 20em;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    left: 31px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #c0c0c0;
+    top: 250px;
+    bottom: 0;
+    right: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    width: 50%;
+    padding: 3em;
+    position: relative;
+    background-color: inherit;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -7px;
+    background-color: #FFFFFF;
+    border: 4px solid #2D9CDB;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    min-width: 500px;
+}
+
+.left {
+    left: 0;
+}
+
+.left .content{
+    text-align: right;
+}
+
+.container .content h4 {
+    padding-top: .3em;
+}
+
+.container .content p:nth-of-type(2) {
+    padding-bottom: .8em;
+}
+
+.container:last-child .content h4 {
+    color: #2D9CDB;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -11px;
+}
+
+.container::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Pseudo Classes */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.left::after,
+.right::after {
+    left:22px;
+}
+
+.right {
+    left: 0%;
+}
+
+.left .content{
+    text-align: left;
+}
+
+
+
+.intro-text span {
+    font-size: calc(4vw + 4vh + 2vmin);
+}
+
+.content {
+    padding: 1em 1em;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* skills  */
+.skill-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4.5em;
+}
+
+.skill-cont div {
+    max-width: 600px;
+}
+
+.skill {
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 40px;
+    width: 100%;
+}
+
+/* Added the animation called stack. */
+
+.skill span {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: right;
+    box-sizing: border-box;
+    animation: stack 3s 1;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#css {
+    width: 60%;
+    background-color: #EAEAEA;
+}
+
+#python {
+    width: 75%;
+    background-color: #B2B2B2;
+}
+
+#java {
+    width: 85%;
+    background-color: #2D9CDB;
+
+}
+
+#csharp {
+    width: 80%;
+    background-color: #2D9CDB;
+}
+
+#php {
+    width: 65%;
+    background-color: #EAEAEA;
+}
+
+#database {
+    width: 80%;
+    background-color: #2D9CDB;
+}
+
+/* langs */
+.langs {
+    padding-top: 15em;
+}
+
+.lang-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4.5em;
+}
+
+.lang {
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: 40px;
+    max-width: 600px;
+    flex: 1;
+}
+
+.lang span {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: right;
+    box-sizing: border-box;
+    animation: stack 3s 1;
+    border-radius: 40px;
+    overflow: hidden;
+}
+#eng {
+    width: 70%;
+    background-color: #848482;
+}
+
+#kor {
+    width: 99%;
+    background-color: #e3319d;
+}
+
+#man {
+    width: 85%;
+    background-color: #868684;
+}
+
+@keyframes stack {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+}
+
+/* I used grid for this section */
+.section3 {
+    padding: 5em 0;
+}
+
+.card span {
+    font-size:  clamp(1.2rem, 0.75rem + 1.5vw, 2rem);
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+
+.section3 .inner {
+    width: 100%;
+}
+
+.band {
+    width: 90%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+}
+
+.card {
+    background-color: #fff;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    transition: 0.1s;
+}
+
+/* When hover over the images, there will be a shadow */
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,.2);
+}
+
+/* I positioned the items in the box by using flex box */
+article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+article p {
+    flex: 1;
+}
+
+.thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* The images are not the real one */
+
+.one {
+    background-image: url("./assets/programing.jpg");
+}
+
+.two {
+    background-image: url("./assets/arduino.gif");
+}
+
+.three {
+    background-image: url("./assets/javafx.gif");
+}
+
+.four {
+    background-image: url("./assets/code.png");
+}
+
+.five {
+    background-image: url("./assets/programing.jpg");
+}
+
+.six {
+    background-image: url("./assets/discordbot.gif");
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 500px;
+    border-top: #bbbbbb solid 1px;
+}
+
+footer .inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.footer-text p:nth-of-type(1) {
+    font-size: clamp(3rem, 0.75rem + 1.5vw, 5rem);
+    margin: 0.8em 0;
+}
+
+.footer-text p:nth-of-type(2) {
+    color: #778899;
+}
+
+footer ul {
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin-bottom: 1em;
+}
+
+footer ul li a {
+    display: flex;
+    justify-content: center;
+}
+
+.img-box {
+    max-width: 100px;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.text-item {
+    width: 10rem;
+    padding: 1.8em 0 2em 1em;
+    /*font-size: 2rem;*/
+}
+
+
+/* Media Query for the 650px display */
+@media screen and (min-width: 65em) {
+
+    .band,
+    .lang-con,
+    .skill-cont {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lang,
+    .lang span,
+    .skill,
+    .skill span{
+        height: 5rem;
+        line-height: 5rem;
+    }
+
+    .menu-bar {
+        padding: 10em 5em 0 5em;
+    }
+
+}
+
+/* Media Query for the 1000px display */
+@media screen and (min-width: 100em) {
+
+    .band,
+    .lang-cont,
+    .skill-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-bar ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .timeline::after {
+        left: 50%;
+    }
+
+    .left .content{
+        text-align: right;
+    }
+
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -10px;
+    }
+
+    .left::before {
+        left: 20%;
+    }
+
+    .left::after {
+        left: auto;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
